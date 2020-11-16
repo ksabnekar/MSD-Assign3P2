@@ -25,7 +25,7 @@ SECRET_KEY = 'tsgcdav1^x=q1$o6d55_3jde0a@r!ut@e9u8i(j1vx7&h4b=a+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'nishi.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'skanak.pythonanywhere.com']
 
 
 # Application definition
