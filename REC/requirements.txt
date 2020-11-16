@@ -1,0 +1,6 @@
+django
+django-crispy-forms
+Pillow
+social-auth-app-django==2.1.0
+xhtml2pdf
+WeasyPrint==0.42.3

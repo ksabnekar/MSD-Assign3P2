@@ -1,0 +1,29 @@
+{% extends 'realEstate/admin_base.html' %}
+{% load static %}
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <div class="page-container">
+            <h2 class="top-menu">Welcome {{ user.username }},</h2>
+            <p>Please choose from below options.</p>
+        </div>
+    {% endif %}
+
+    <div class="content container">
+        <div class="row" style="width:100%">
+            <div class="col-md-12" style="width: 100%">
+                <div class="links">
+                    <!-- Example row of columns -->
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <a href="{% url 'realEstate:property_summary_pdf' %}" class="row">
+                                <span class="btn btn-primary">Property Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

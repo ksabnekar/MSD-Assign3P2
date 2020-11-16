@@ -1,0 +1,41 @@
+{% block content %}
+
+<div class="page-container">
+
+    <h2 class="top-menu"style="text-align:center;"><strong>Property list</strong></h2>
+    <div class="row">
+        <h2 style="text-align:center;"><strong>Real Estate Sales Companion</strong></h2>
+    </div>
+    <div>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr class="bg-info">
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Property</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Property type</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Dimension</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Price</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Bed</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Bath</strong></td>
+                <td style="text-align:center;background-color:#c7ebff;border:1px solid #060606; padding: 5px"><strong>Status</strong></td>
+            </tr>
+            </thead>
+            <tbody>
+                {% for property in propertys %}
+                <tr>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.prop_number }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.type }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.dimension }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.price }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.bed }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.bath }}</td>
+                    <td style="text-align:center;background-color:#f0dfdb;border:1px solid #060606; padding: 5px">{{ property.purpose }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+{% endblock %}
+
